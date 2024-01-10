@@ -1,0 +1,42 @@
+
+.gat{
+    color: bisque;
+    text-align: center;
+    font-size: 7em;
+    margin-top: -50px;
+}
+h1{
+    font-size: 2em;
+    color: aliceblue;
+    text-align: center;
+    font-size: 5em;
+    
+}
+
+p{
+    color: aliceblue;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: -70px;
+    font-size: 1.5em;
+}
+.sear{
+    justify-content: center;
+    display: flex;
+    padding-top: 20px;
+}
+
+.filterbuttons{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+.fb{
+    background-color: black;
+    border-color: aliceblue;
+    font-family: 'Courier New', Courier, monospace;
+    color: aliceblue;
+}
+.fb:hover{
+    color: black;
+}
