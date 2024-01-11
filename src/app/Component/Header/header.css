@@ -40,3 +40,17 @@ p{
 .fb:hover{
     color: black;
 }
+
+.cardsec{
+    padding: 50px;
+    display: flex;
+    margin-left: 20px;
+    
+}
+
+.tit{
+    margin-left: 50px;
+    font-weight:bolder;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2em;
+}

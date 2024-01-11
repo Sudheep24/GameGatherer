@@ -1,6 +1,7 @@
 import React from 'react';
 import './header.css';
 import Search from '../Search/Search';
+import Card from '../Card/Card';
 
 export default function Header() {
     const headerStyle = {
@@ -15,6 +16,7 @@ export default function Header() {
         
       };
   return (
+    <>
     <div style={headerStyle}>
       
         <h1>Game</h1>
@@ -33,5 +35,15 @@ export default function Header() {
         </div>
       
     </div>
+
+      <div className='cardsec'>
+        <p className='tit'>Cricket</p>
+        <Card/>
+        <Card/>
+        <Card/>
+        <Card/>
+        <Card/>
+      </div>
+    </>
   );
 }
