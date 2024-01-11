@@ -1,7 +1,10 @@
 import React from 'react';
 import './header.css';
 import Search from '../Search/Search';
-import Card from '../Card/Card';
+
+import CricketCard from '../CricketCard/CricketCard';
+import BadmintonCard from '../BadmintonCard/BadmintonCard';
+import Link from 'next/link';
 
 export default function Header() {
     const headerStyle = {
@@ -35,14 +38,37 @@ export default function Header() {
         </div>
       
     </div>
+    <button className='cricket'>Cricket</button>
 
       <div className='cardsec'>
-        <p className='tit'>Cricket</p>
-        <Card/>
-        <Card/>
-        <Card/>
-        <Card/>
-        <Card/>
+        
+        
+        <CricketCard/>
+        <CricketCard/>
+        <CricketCard/>
+        <CricketCard/>
+        <CricketCard/>
+       
+      </div>
+
+      <button className='cricket'>Badminton</button>
+      <div className='cardsec'>
+        
+        
+        <BadmintonCard/>
+        <BadmintonCard/>
+        <BadmintonCard/>
+        <BadmintonCard/>
+        <BadmintonCard/>
+       
+      </div>
+
+
+      <div >
+        <Link href='/Events'>
+         <button className="view">View More</button>
+
+        </Link>
       </div>
     </>
   );
