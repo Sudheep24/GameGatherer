@@ -1,5 +1,19 @@
-.sidenav{
-    background-color: aliceblue;
-    padding-left: 50px;
-    width: 400px;
+.sidenav {
+    border-color: aliceblue;
+    border: 1px solid; 
+    padding-left: 0px;
+    width: 200px;
+}
+
+.sear{
+    padding: 10px;
+}
+
+#dropdown{
+    padding:5px;
+    width: 100px;
+}
+
+option{
+    font-size: 1em;
 }
