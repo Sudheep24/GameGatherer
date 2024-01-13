@@ -18,9 +18,9 @@ export default function Page() {
           </p>
           <button className="form-btn">Log in</button>
         </form>
-        <p className="sign-up-label">
+        <div className="sign-up-label">
           Don't have an account?<span className="sign-up-link"><a href='/signup'>Sign up</a></span>
-        </p>
+        </div>
         
       </div>
     </div>
