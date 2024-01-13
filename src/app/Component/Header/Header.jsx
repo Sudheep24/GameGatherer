@@ -24,7 +24,7 @@ export default function Header() {
       
         <h1>Game</h1>
         <h1 className='gat'>Gatherer</h1>
-        <p>Search.Find.Build</p>
+        <p>Search.Find.Play</p>
         <div className="sear">
           <Search />
         </div>
