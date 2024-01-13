@@ -18,7 +18,7 @@ export default function Navbar() {
               <button>Events</button>
           </Link>
         </div>
-        <Link href='/signup'>
+        <Link href='/login'>
           <button className='log'><img src="https://cdn.pixabay.com/photo/2014/04/02/10/48/symbol-304598_1280.png" alt="" /></button>
         </Link>
     
