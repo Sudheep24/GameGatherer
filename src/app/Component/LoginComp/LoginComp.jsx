@@ -17,7 +17,7 @@ export default function LoginComp() {
         <input type="text" placeholder='password' className='pass' />
 
 
-        <span className='sss'>If you don't have an account? <a href='/signup'>Signup</a></span>
+        <span className='sss'>If you don't have an account? </span>
         <button className='logbut'> Login</button>
         </div>
         
