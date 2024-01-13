@@ -1,4 +1,5 @@
 import React from 'react'
+import './Logcomp.css'
 
 export default function LoginComp() {
   return (
