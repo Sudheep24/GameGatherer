@@ -14,8 +14,7 @@ export default function SideNav() {
         </select>
             </div>
         </div>
-        
-        sideNav
+      
     </div>
   )
 }

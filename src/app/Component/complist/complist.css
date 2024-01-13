@@ -1,4 +1,15 @@
-.grid{
+.grid {
+    border: 1px solid;
+    border-color: aliceblue;
     
-    width: 1500px;
+
+}
+
+.find{
+    display: flex;
+    padding: 10px;
+}
+.c {
+    display: flex;
+    flex-wrap: wrap;
 }
