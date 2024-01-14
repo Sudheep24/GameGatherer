@@ -1,5 +1,6 @@
 import React from 'react'
 import './card.css'
+import Link from 'next/link'
 
 export default function CricketCard() {
   return (
@@ -39,10 +40,17 @@ export default function CricketCard() {
           <p className="card-footer">
             Slots : 11 &nbsp; | &nbsp; Total Slots : 5
           </p>
+          
         </div>
+  
       </div>
+      
     </div>
+    
   </div>
+  <Link href='/singlepost'>
+  <button className='mk'>View More</button>
+  </Link>
 </div>
 
     </div>

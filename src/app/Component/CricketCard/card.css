@@ -1,7 +1,7 @@
 .card {
     overflow: visible;
     width: 290px;
-    height: 354px;
+    height: 375px;
     padding-left: 20px;
   }
   
@@ -173,4 +173,15 @@
     100% {
       transform: translateY(0px);
     }
+  }
+
+
+  .mk{
+    justify-content: center;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+   height: 30px; 
+   margin-top: 20px;
+   
   }

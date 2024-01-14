@@ -1,0 +1,71 @@
+.singtits{
+    font-size: 5em;
+    color: antiquewhite;
+    font-weight: 900;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+.addw{
+    font-size: 2em;
+    color: #f9f5ef;
+    font-weight: 100;
+    display: flex;
+    justify-content: center;
+
+}
+.single{
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+}
+
+.details{
+    font-size: 1em;
+    color: #f9f5ef;
+    font-weight: 200;
+    display: flex;
+    justify-content: center;
+    padding-left: 10px;
+    
+}
+.details p{
+    padding: 10px;
+}
+
+hr{
+    padding-bottom: 20px;
+}
+.delta{
+    display: flex;
+}
+.descrip{
+    font-size: 1em;
+    color: #f9f5ef;
+    font-weight: 100;
+    display: flex;
+    justify-content: center;
+    padding-left: 10px;
+    width: 1000px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.book{
+    justify-content: center;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.evedate{
+    font-size: 1em;
+    color: #f9f5ef;
+    font-weight: 100;
+    display: flex;
+    justify-content: center;
+}

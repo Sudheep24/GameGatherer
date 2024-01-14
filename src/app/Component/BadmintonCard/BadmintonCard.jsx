@@ -43,6 +43,7 @@ export default function BadmintonCard() {
       </div>
     </div>
   </div>
+  <button className='mk'>View More</button>
 </div>
 
     </div>
