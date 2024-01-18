@@ -1,6 +1,6 @@
 import React from 'react'
 import './write.css'
-import Form from '../Component/Form/form'
+import Form from '../Component/Form/Form'
 
 export default function Write() {
   return (
