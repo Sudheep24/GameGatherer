@@ -1,0 +1,21 @@
+.form{
+    display: grid;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    margin-top: 30px;
+
+}
+input{
+    border-radius: 50px;
+    padding: 10px;
+    
+}
+.formdet{
+   padding: 20px;
+}
+.formdet input{
+    width: 500px;
+}
+
