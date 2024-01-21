@@ -15,7 +15,8 @@ export default function Header() {
         padding: '20px',
         backgroundRepeat:'no-repeat',
         padding:'30px',
-        marginTop:'30px'
+        marginTop:'30px',
+        maxWidth:'100%'
         
       };
   return (
