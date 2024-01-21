@@ -3,6 +3,7 @@ import './globals.css'
 import Navbar from './Component/Navbar/Navbar'
 import { AuthProvider } from '@/providers/authProvider'
 
+
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
