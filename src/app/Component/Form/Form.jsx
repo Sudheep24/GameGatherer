@@ -22,7 +22,7 @@ export default function Form() {
     }
 
     if (status === "authenticated"){
-    router.push('/')
+    router.push('/write')
     
     }
 
