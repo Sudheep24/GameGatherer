@@ -1,7 +1,32 @@
-import React from 'react'
+"use client"
+
+import React, { useState } from 'react'
 import './form.css'
+import { useRouter } from 'next/navigation';
+import { useSession } from 'next-auth/react';
 
 export default function Form() {
+  
+    const router = useRouter()
+
+    const {status} = useSession();
+
+   
+
+    const [open,setOpen]=useState(false);
+    const [value,setValue] = useState("");
+
+
+    if (status === "loading"){
+      return <div>....loading</div>
+    }
+
+    if (status === "authenticated"){
+    router.push('/')
+    
+    }
+
+
   return (
     <div>
         <div className="form">

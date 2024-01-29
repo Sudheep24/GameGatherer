@@ -7,18 +7,18 @@ import { useRouter } from 'next/navigation'
 
 export default function LoginComp() {
 
-  const router = useRouter()
+      const router = useRouter()
 
-const {data,status} = useSession();
+    const {data,status} = useSession();
 
-if (status === "loading"){
-  return <div>....loading</div>
-}
+    if (status === "loading"){
+      return <div>....loading</div>
+    }
 
-if (status === "authenticated"){
- router.push('/')
- 
-}
+    if (status === "authenticated"){
+    router.push('/')
+    
+    }
 
   return (
    

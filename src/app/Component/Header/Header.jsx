@@ -1,76 +1,83 @@
-import React from 'react';
+"use client"
 import './header.css';
-import Search from '../Search/Search';
+import React, { useEffect, useState } from 'react';
 
+import Search from '../Search/Search';
+import Link from 'next/link';
 import CricketCard from '../CricketCard/CricketCard';
 import BadmintonCard from '../BadmintonCard/BadmintonCard';
-import Link from 'next/link';
+import Events from '@/app/Events/page';
 
-export default function Header() {
-    const headerStyle = {
-        backgroundImage: 'url(https://i.pinimg.com/736x/a9/1f/b9/a91fb907e46d5741271b0443e91b59d1.jpg)',
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        color: 'white',
-        padding: '20px',
-        backgroundRepeat:'no-repeat',
-        padding:'30px',
-        marginTop:'30px',
-        maxWidth:'100%'
-        
-      };
+const getData = async () => {
+  const res = await fetch("http://localhost:3000/api/categories", {
+    cache: "no-store"
+  });
+  if (!res.ok) {
+    throw new Error('Failed')
+  }
+  return res.json();
+}
+
+const Header = () => {
+  const [data, setData] = useState([]);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const result = await getData();
+        setData(result);
+      } catch (error) {
+        console.error('Error fetching data:', error);
+      }
+    };
+    fetchData();
+  }, []);
+
+  const headerStyle = {
+    backgroundImage: 'url(https://i.pinimg.com/736x/a9/1f/b9/a91fb907e46d5741271b0443e91b59d1.jpg)',
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+    color: 'white',
+    padding: '20px',
+    backgroundRepeat: 'no-repeat',
+    padding: '30px',
+    marginTop: '30px',
+    maxWidth: '100%',
+    display:'-ms-grid',
+  };
+
   return (
     <>
-    <div style={headerStyle}>
-      
+      <div style={headerStyle}>
         <h1>Game</h1>
         <h1 className='gat'>Gatherer</h1>
         <p>Search.Find.Play</p>
         <div className="sear">
           <Search />
         </div>
-
-        <div className="filterbuttons">
-          <button className='fb'>Cricket</button>
-          <button className='fb'>Cricket</button>
-          <button className='fb'>Cricket</button>
-          <button className='fb'>Cricket</button>
-          <button className='fb'>Cricket</button>
+        <div className="catbutt">
+          {data.map((item) => (
+            <Link href={`/Events?cat=${item.tittle}`} className = {'${styles[item.singlepost]}'}key={item._id}>
+              
+                <button className='fb'>{item.tittle}</button>
+            
+            </Link>
+          
+          
+        ))}
+        
         </div>
+
+
+      </div>
+
+     
+
+     
+
       
-    </div>
-    <button className='cricket'>Cricket</button>
-
-      <div className='cardsec'>
-        
-        
-        <CricketCard/>
-        <CricketCard/>
-        <CricketCard/>
-        <CricketCard/>
-        <CricketCard/>
-       
-      </div>
-
-      <button className='cricket'>Badminton</button>
-      <div className='cardsec'>
-        
-        
-        <BadmintonCard/>
-        <BadmintonCard/>
-        <BadmintonCard/>
-        <BadmintonCard/>
-        <BadmintonCard/>
-       
-      </div>
-
-
-      <div >
-        <Link href='/Events'>
-         <button className="view">View More</button>
-
-        </Link>
-      </div>
     </>
   );
 }
+
+export default Header;

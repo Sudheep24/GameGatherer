@@ -3,6 +3,7 @@
     width: 290px;
     height: 375px;
     padding-left: 20px;
+    display:-ms-inline-flexbox;
   }
   
   .content {

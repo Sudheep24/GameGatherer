@@ -1,8 +1,16 @@
-import React from 'react'
+
+
+import React  from 'react'
 import './card.css'
 import Link from 'next/link'
 
-export default function CricketCard() {
+
+
+
+const  CricketCard= () => {
+
+  
+
   return (
     <div>
         <div className="card">
@@ -56,3 +64,6 @@ export default function CricketCard() {
     </div>
   )
 }
+
+
+export default CricketCard;
