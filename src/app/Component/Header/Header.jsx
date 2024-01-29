@@ -51,7 +51,7 @@ const Header = () => {
       <div style={headerStyle}>
         <h1>Game</h1>
         <h1 className='gat'>Gatherer</h1>
-        <p>Search.Find.Play</p>
+       
         <div className="sear">
           <Search />
         </div>

@@ -1,27 +1,15 @@
 import React from 'react'
 import './about.css'
-
-export const About = () => {
+export default function Section2() {
   return (
     <div>
-        
-        <div className="about">
-          <h3 className='ab'>
-            Find the 
-            <span className='abot'>
-             Events
-          </span> 
-            
-           that you want to take part
-          </h3>
-            
-        </div>
+      <span className='more'>
+        Find the perfect match that you want to play
+      </span>
 
-        <div className="aboutimg">
-          <img src="https://i.pinimg.com/736x/d5/d1/fa/d5d1facd975da10ac3887d67c03f9ad2.jpg" alt=""  className='game'/>
-          <img src="https://i.pinimg.com/736x/3a/fd/80/3afd80d5ce1a3a65c9cdbc1da033175b.jpg" alt="" className='game'/>
-          <img src="https://i.pinimg.com/736x/de/8c/f8/de8cf877670586ae9f0795967635d2ff.jpg" alt="" className='game' />
-          </div>
+      <span className='moreti'>Search.Find.Play</span>
+
+      <p>"GameGatherer" is your ultimate destination for all things gaming. As an avid gamer's haven, GameGatherer provides a bustling online hub where players unite to explore, compete, and celebrate their passion for gaming. Dive into a rich tapestry of diverse game genres, from adrenaline-pumping action to mind-bending puzzles and immersive storytelling adventures. Engage in vibrant communities, exchange tips and strategies, and forge lasting friendships with fellow gamers. With a seamless and intuitive platform, GameGatherer offers an unparalleled gaming experience tailored to every player's preferences and playstyle. Join the gathering, and let the games begin!</p>
     </div>
   )
 }

@@ -1,118 +1,147 @@
-
-.gat{
+/* Default styles */
+.gat {
     color: bisque;
     text-align: center;
     font-size: 7em;
-    margin-top: -50px;
-    display: -moz-popup;
+    margin-top: -30px;
 }
-h1{
+
+h1 {
     font-size: 2em;
     color: aliceblue;
     text-align: center;
-    font-size: 5em;
-    
 }
 
-p{
-    color: aliceblue;
-    text-align: center;
-    font-family: 'Courier New', Courier, monospace;
-    margin-top: -70px;
-    font-size: 1.5em;
-}
-.sear{
-    justify-content: center;
+
+.sear,
+.filterbuttons {
     display: flex;
-    padding-top: 20px;
+    justify-content: center;
+    padding-top: 0px;
+    margin-top:-50px ;
 }
 
-.filterbuttons{
-    display: flex;
-    justify-content: center;
-    padding-top: 20px;
-}
-.fb{
+.fb {
     background-color: black;
     border-color: aliceblue;
     font-family: 'Courier New', Courier, monospace;
     color: aliceblue;
 }
-.fb:hover{
+
+.fb:hover {
     color: black;
 }
 
-.cardsec{
+.cardsec {
     padding: 50px;
     display: flex;
     margin-left: 80px;
     margin-bottom: 50px;
-    max-width: 100% ;
-    
+    max-width: 100%;
 }
 
-.tit{
+.tit {
     margin-left: 50px;
-    font-weight:bolder;
+    font-weight: bolder;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 2em;
 }
 
-.cricket{
+.cricket {
     margin-left: 90px;
 }
-
 
 .view {
     height: 50px;
     margin: 5px;
     width: 120px;
     background: #333;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
+    display: flex;
     justify-content: center;
-    cursor: pointer;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
     font-family: Consolas, Courier New, monospace;
     border: solid #404c5d 1px;
     font-size: 16px;
     color: rgb(161, 161, 161);
-    -webkit-transition: 500ms;
-    transition: 500ms;
     border-radius: 5px;
     background: linear-gradient(145deg, #2e2d2d, #212121);
-    -webkit-box-shadow: -1px -5px 15px #41465b, 5px 5px 15px #41465b,
-      inset 5px 5px 10px #212121, inset -5px -5px 10px #212121;
-    box-shadow: -1px -5px 15px #41465b, 5px 5px 15px #41465b,
-      inset 5px 5px 10px #212121, inset -5px -5px 10px #212121;
-      justify-content: center;
-      display: flex;
-      align-items: center;
-      margin-left: auto;
-      margin-right: auto;
-  }
-  
-  .view:hover {
-    -webkit-box-shadow: 1px 1px 13px #20232e, -1px -1px 13px #545b78;
+    box-shadow: -1px -5px 15px #41465b, 5px 5px 15px #41465b, inset 5px 5px 10px #212121, inset -5px -5px 10px #212121;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.view:hover {
     box-shadow: 1px 1px 13px #20232e, -1px -1px 13px #545b78;
     color: #d6d6d6;
-    -webkit-transition: 500ms;
-    transition: 500ms;
-  }
-  
- view:active {
-    -webkit-box-shadow: 1px 1px 13px #20232e, -1px -1px 33px #545b78;
+}
+
+view:active {
     box-shadow: 1px 1px 13px #20232e, -1px -1px 33px #545b78;
     color: #d6d6d6;
-    -webkit-transition: 100ms;
-    transition: 100ms;
-  }
-  
-  .catbutt{
-    display: -ms-flexbox;
+}
+
+.catbutt {
+    display: flex;
     justify-content: center;
     padding: 30px;
+}
 
-  }
+/* Responsive styles */
+@media only screen and (max-width: 768px) {
+    /* Adjust font sizes and layout for smaller screens */
+    .gat {
+        font-size: 4em;
+        margin-top: -20px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    p {
+        font-size: 1em;
+        margin-top: -40px;
+    }
+
+    .tit {
+        font-size: 1.5em;
+        margin-left: 20px;
+    }
+
+    .cricket {
+        margin-left: 40px;
+    }
+
+    .view {
+        width: 100px;
+        height: 40px;
+        font-size: 14px;
+    }
+    .cardsec {
+ 
+        flex-direction: column;
+        margin-left: 0;
+    
+}
+/* Responsive styles */
+
+    .sear,
+    .catbutt {
+        padding-top: 10px; /* Reduce padding for smaller screens */
+        width: 50px;
+        justify-content: center;
+    }
+
+    .sear button,
+    .catbutt button {
+        font-size: 14px; /* Adjust button font size for smaller screens */
+    }
+
+    /* Adjust the width of the buttons */
+    .sear button,
+    .catbutt button {
+        width: 120px; /* Example width, adjust as needed */
+    }
+}
+
+
