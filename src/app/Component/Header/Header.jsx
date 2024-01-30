@@ -19,6 +19,7 @@ const getData = async () => {
 }
 
 const Header = () => {
+  
   const [data, setData] = useState([]);
 
   useEffect(() => {

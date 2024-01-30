@@ -1,0 +1,42 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ 
+    padding: 20px;
+}
+
+.footer-left,
+.footer-middle,
+.footer-right {
+    flex: 1;
+}
+
+.footer-left {
+    text-align: left;
+    display: grid;
+    padding-block:10px ;
+    a{
+        color: aliceblue;
+        text-decoration: none;
+    }
+}
+
+.footer-middle {
+    text-align: center;
+    
+    img{
+        width: 50px;
+        height: 50px;
+        
+    }
+}
+
+.footer-right {
+    text-align: right;
+}
+
+
+FontAwesomeIcon{
+    width: 10px;
+}

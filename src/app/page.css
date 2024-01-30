@@ -22,13 +22,19 @@
         opacity: 0;
     }
 
-    50%{
+    25%{
         opacity: .3;
         transform: translate();
 
 
     }
+
+    50%{
+        opacity: .7;
+        transform: translate();
+    }
     100%{
+        opacity: 1;
         transform: translate();
 
     }
