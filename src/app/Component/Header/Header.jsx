@@ -9,7 +9,7 @@ import BadmintonCard from '../BadmintonCard/BadmintonCard';
 import Events from '@/app/Events/page';
 
 const getData = async () => {
-  const res = await fetch("http://localhost:3000/api/categories", {
+ const res = await fetch("https://gamegatherer.vercel.app/api/categories", {
     cache: "no-store"
   });
   if (!res.ok) {
