@@ -1,7 +1,6 @@
-"use client"
+"use client";
 import './header.css';
 import React, { useEffect, useState } from 'react';
-
 import Search from '../Search/Search';
 import Link from 'next/link';
 import CricketCard from '../CricketCard/CricketCard';
@@ -19,7 +18,6 @@ const getData = async () => {
 }
 
 const Header = () => {
-  
   const [data, setData] = useState([]);
 
   useEffect(() => {
@@ -34,49 +32,24 @@ const Header = () => {
     fetchData();
   }, []);
 
-  const headerStyle = {
-    backgroundImage: 'url(https://i.pinimg.com/736x/a9/1f/b9/a91fb907e46d5741271b0443e91b59d1.jpg)',
-    backgroundSize: 'cover',
-    backgroundPosition: 'center',
-    color: 'white',
-    padding: '20px',
-    backgroundRepeat: 'no-repeat',
-    padding: '30px',
-    marginTop: '30px',
-    maxWidth: '100%',
-    display:'-ms-grid',
-  };
+  
 
   return (
     <>
-      <div style={headerStyle}>
+      <div className='headerStyle'>
         <h1>Game</h1>
         <h1 className='gat'>Gatherer</h1>
-       
-        <div className="sear">
+        <div className="sear1">
           <Search />
         </div>
         <div className="catbutt">
           {data.map((item) => (
             <Link href={`/Events?cat=${item.tittle}`} className = {'${styles[item.singlepost]}'}key={item._id}>
-              
-                <button className='fb'>{item.tittle}</button>
-            
+              <button className='fb'>{item.tittle}</button>
             </Link>
-          
-          
-        ))}
-        
+          ))}
         </div>
-
-
       </div>
-
-     
-
-     
-
-      
     </>
   );
 }

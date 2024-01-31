@@ -1,4 +1,19 @@
 /* Default styles */
+
+/* Default styles */
+.headerStyle {
+    background-image: url(https://i.pinimg.com/736x/a9/1f/b9/a91fb907e46d5741271b0443e91b59d1.jpg);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 20px;
+    background-repeat: no-repeat;
+    padding: 30px;
+    margin-top: 30px;
+    width: 1700px;
+    display: -ms-grid;
+}
+
 .gat {
     color: bisque;
     text-align: center;
@@ -6,6 +21,26 @@
     margin-top: -30px;
 }
 
+.sear1{
+    justify-content: center;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+
+
+    .search{
+        width: 500px;
+    }
+
+@media only screen and (max-width: 768px){
+    .search{
+        width: 200px;
+    }
+
+}
 h1 {
     font-size: 2em;
     color: aliceblue;
@@ -13,7 +48,7 @@ h1 {
 }
 
 
-.sear,
+
 .filterbuttons {
     display: flex;
     justify-content: center;
@@ -89,8 +124,17 @@ view:active {
 /* Responsive styles */
 @media only screen and (max-width: 768px) {
     /* Adjust font sizes and layout for smaller screens */
+
+    .headerStyle {
+    width: 270px;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center; 
+}
+
     .gat {
-        font-size: 4em;
+        font-size: 2em;
         margin-top: -20px;
     }
 
@@ -125,23 +169,16 @@ view:active {
 }
 /* Responsive styles */
 
-    .sear,
-    .catbutt {
-        padding-top: 10px; /* Reduce padding for smaller screens */
-        width: 50px;
-        justify-content: center;
-    }
+.catbutt {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    flex-wrap: wrap;
 
-    .sear button,
-    .catbutt button {
-        font-size: 14px; /* Adjust button font size for smaller screens */
-    }
+}
 
-    /* Adjust the width of the buttons */
-    .sear button,
-    .catbutt button {
-        width: 120px; /* Example width, adjust as needed */
-    }
+
+
 }
 
 

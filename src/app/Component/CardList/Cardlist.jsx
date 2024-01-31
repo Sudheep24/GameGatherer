@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 export const Cardlist = () => {
   return (
-    <div> <button className='cricket'>Cricket</button>
+<>
       <div className='cardsec'>
         <CricketCard />
         <CricketCard />
@@ -14,12 +14,11 @@ export const Cardlist = () => {
       </div>
 
       <div>
-        <Link href='/Events'>
-          <button className="view">View More</button>
-        </Link>
+       
       </div>
       
-      </div>
+    
+</>
 
   )
 }
