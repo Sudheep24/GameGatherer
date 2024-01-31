@@ -78,3 +78,8 @@ hr{
     display: flex;
     justify-content: center;
 }
+
+.single{
+    width: 1000px;
+    height: 600px;
+}

@@ -6,9 +6,9 @@ export default function Eventcard() {
   return (
     <div className="cards">
     <div className="cardz">
-    <div className="card_load"></div>
-    <div className="card_load_extreme_title"></div>
-    <div className="card_load_extreme_descripion"></div>
+    <div className="card_load">sd</div>
+    <div className="card_load_extreme_title">skdjh</div>
+    <div className="card_load_extreme_descripion">sdjb</div>
     <Link href='singlepost'>
       
     

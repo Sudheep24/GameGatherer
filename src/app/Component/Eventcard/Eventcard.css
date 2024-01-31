@@ -1,6 +1,10 @@
 
 .cards{
     padding: 15px;
+    display: grid;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .cardz {
@@ -39,6 +43,9 @@
     background-size: 200% 100%;
     background-position: 100% 0;
     animation: load89234 2s infinite;
+    color: black;
+    font-weight: 800;
+    padding-left: 20px;
   }
   
   .card_load_extreme_descripion {
@@ -53,6 +60,17 @@
     background-size: 200% 100%;
     background-position: 100% 0;
     animation: load89234 2s infinite;
+    color: black;
+    padding-left: 20px;
+    
+    
+  }
+  .book{
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    
   }
   
   @keyframes load89234 {

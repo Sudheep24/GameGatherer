@@ -13,3 +13,43 @@
     display: flex;
     flex-wrap: wrap;
 }
+
+
+
+.sidenav {
+    
+    
+    padding-left: 0px;
+    width: 200px;
+}
+
+.sear{
+    padding: 10px;
+    display: flex;
+    gap: 1rem;
+    margin-right: 20px;
+    
+}
+
+#dropdown{
+    padding:5px;
+    width: 100px;
+}
+
+option{
+    font-size: 1em;
+    
+}
+
+select{
+    border-radius: 40px;
+    padding: 20px;
+}
+
+
+.fi{
+    padding: 10px;
+}
+.search{
+        width: 500px;
+    }
