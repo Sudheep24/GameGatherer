@@ -9,7 +9,7 @@ export default function Eventcard() {
     <div className="card_load">sd</div>
     <div className="card_load_extreme_title">skdjh</div>
     <div className="card_load_extreme_descripion">sdjb</div>
-    <Link href='singlepost'>
+    <Link href={`/singlepost?cat=${item.tittle}`}>
       
     
     <button className='book'>View More</button>

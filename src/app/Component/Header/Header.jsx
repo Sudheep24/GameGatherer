@@ -3,9 +3,6 @@ import './header.css';
 import React, { useEffect, useState } from 'react';
 import Search from '../Search/Search';
 import Link from 'next/link';
-import CricketCard from '../CricketCard/CricketCard';
-import BadmintonCard from '../BadmintonCard/BadmintonCard';
-import Events from '@/app/Events/page';
 
 const getData = async () => {
  const res = await fetch("https://gamegatherer.vercel.app/api/categories", {
