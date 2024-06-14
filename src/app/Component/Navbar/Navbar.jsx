@@ -6,12 +6,7 @@ import Link from 'next/link';
 import { signOut, useSession,signIn } from 'next-auth/react';
 
 export default function Navbar() {
-  const handleSignOut = () => {
-    signOut();
-  };
 
-  const [open, setOpen] = useState(false);
-  const { status } = useSession();
 
   return (
     <><div className='nav'>
@@ -26,22 +21,16 @@ export default function Navbar() {
             <button>Events</button>
           </Link>
         </div>
-        {status === "unauthenticated" ? (
-      
-      <div className="loginlinks">
         
-          <button onClick={()=>signIn("google") } className='buttlog'>Login</button>
-      </div>
-      ) : (
         <>
         <div className="loginlinks">
-          <button onClick={handleSignOut} className='buttlog'>Logout</button>
+          <button className='buttlog'>Logout</button>
           <Link href='/write'>
             <button className='buttlog'>Post events</button>
           </Link>
           </div>
         </>
-      )}
+      
       </div>
       
     </>
